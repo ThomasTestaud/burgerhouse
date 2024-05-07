@@ -4,6 +4,9 @@ import { installPrompt } from "virtual:nuxt-pwa-configuration";
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", 'nuxt-icon', '@vite-pwa/nuxt'],
+  buildModules: [
+    '@nuxtjs/pwa',
+  ],
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
