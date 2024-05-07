@@ -30,6 +30,12 @@ export default defineNuxtConfig({
           type: 'image/png',
           purpose: 'any maskable',
         },
+        {
+          src: 'public/icon3.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'maskable',
+        },
       ],
     },
     workbox: {
