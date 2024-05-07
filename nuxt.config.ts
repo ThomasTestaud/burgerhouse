@@ -22,15 +22,14 @@ export default defineNuxtConfig({
           type: 'image/png',
         },
         {
-          src: 'icon.png',
-          sizes: '512x512',
+          src: 'icon2.png',
+          sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: 'icon.png',
+          src: 'icon3.png',
           sizes: '512x512',
           type: 'image/png',
-          purpose: 'any maskable',
         },
       ],
     },
