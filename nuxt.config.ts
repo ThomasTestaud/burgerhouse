@@ -4,7 +4,7 @@ import { installPrompt } from "virtual:nuxt-pwa-configuration";
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", 'nuxt-icon', '@vite-pwa/nuxt'],
- 
+  ssr: false,
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
@@ -16,16 +16,16 @@ export default defineNuxtConfig({
       theme_color: "#FF0000",
       icons: [
         {
-            src: "https://www.pwabuilder.com/assets/icons/icon_192.png",
-            sizes: "192x192",
-            type: "image/png",
-            purpose: "any"
+          src: "https://www.pwabuilder.com/assets/icons/icon_192.png",
+          sizes: "192x192",
+          type: "image/png",
+          purpose: "any"
         },
         {
-            src: "https://www.pwabuilder.com/assets/icons/icon_512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "maskable"
+          src: "https://www.pwabuilder.com/assets/icons/icon_512.png",
+          sizes: "512x512",
+          type: "image/png",
+          purpose: "maskable"
         }
       ]
     },
