@@ -46,8 +46,5 @@ export default defineNuxtConfig({
       // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
       // periodicSyncForUpdates: 20,
     },
-    devOptions: {
-      enabled: true,
-    }
   }
 })
