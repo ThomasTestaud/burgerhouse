@@ -6,25 +6,26 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", 'nuxt-icon', '@vite-pwa/nuxt'],
  
   pwa: {
+    registerType: 'autoUpdate',
     manifest: {
-      name: 'Nuxt Shop Burger',
-      short_name: 'NuxtBurger',
-      description: 'My awesome Nuxt.js project',
-      lang: 'en',
-      theme_color: '#000000',
+      name: "Burger Drive",
+      short_name: "BurgerDrive",
+      description: "Burge Drive app",
+      lang: "en",
+      theme_color: "#FF0000",
       icons: [
         {
-          src: 'pwa-192x192.png',
+          src: 'public/icon.png',
           sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: 'pwa-512x512.png',
+          src: 'public/icon2.png',
           sizes: '512x512',
           type: 'image/png',
         },
         {
-          src: 'pwa-512x512.png',
+          src: 'public/icon3.png',
           sizes: '512x512',
           type: 'image/png',
           purpose: 'any maskable',
