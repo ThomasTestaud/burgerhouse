@@ -6,11 +6,11 @@
         <div v-for="item in cart.items" :key="item.id" class="my-4 bg-white rounded-lg py-2 px-4 shadow-md relative">
             <Icon name="material-symbols:delete-rounded" class="absolute top-2 right-2 text-red-500 cursor-pointer" @click="removeItem(item.id)" />
             <h4 class="text-lg font-semibold">{{ item.name }}</h4>
-            <p class="text-gray-600">Price: ${{ item.price }}</p>
+            <p class="text-gray-600">Price: ${{ item.price/10 }}0</p>
         </div>
 
         <div class="mt-4 font-bold  bg-white text-center p-4 border border-red-500 rounded-lg mx-2">
-            Total: ${{ cart.total }}
+            Total: ${{ cart.total/10 }}0
         </div>
     </div>
 </template>

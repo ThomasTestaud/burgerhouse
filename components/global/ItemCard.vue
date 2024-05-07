@@ -10,7 +10,7 @@
         </div>
         <div class="flex items-center mt-2">
             <span class="text-gray-600 mr-1">$</span>
-            <span class="text-gray-800 font-semibold">{{ props.item.price }}</span>
+            <span class="text-gray-800 font-semibold">{{ props.item.price/10 }}0</span>
         </div>
         <p class="text-gray-500 mt-2">{{ props.item.country }}</p>
         <Button content="Add to Cart" class="mt-4 " @click="addToCart()"/>
