@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
+      start_url: "/",
       name: "Burger Drive",
       short_name: "BurgerDrive",
       description: "Burge Drive app",
@@ -31,7 +32,7 @@ export default defineNuxtConfig({
           purpose: 'any maskable',
         },
         {
-          src: 'public/icon3.png',
+          src: 'public/icon4.png',
           sizes: '512x512',
           type: 'image/png',
           purpose: 'maskable',
