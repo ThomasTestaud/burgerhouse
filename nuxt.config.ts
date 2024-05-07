@@ -16,28 +16,18 @@ export default defineNuxtConfig({
       theme_color: "#FF0000",
       icons: [
         {
-          src: 'public/icon.png',
-          sizes: '192x192',
-          type: 'image/png',
+            src: "https://www.pwabuilder.com/assets/icons/icon_192.png",
+            sizes: "192x192",
+            type: "image/png",
+            purpose: "any"
         },
         {
-          src: 'public/icon2.png',
-          sizes: '512x512',
-          type: 'image/png',
-        },
-        {
-          src: 'public/icon3.png',
-          sizes: '512x512',
-          type: 'image/png',
-          purpose: 'any maskable',
-        },
-        {
-          src: 'public/icon4.png',
-          sizes: '512x512',
-          type: 'image/png',
-          purpose: 'maskable',
-        },
-      ],
+            src: "https://www.pwabuilder.com/assets/icons/icon_512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable"
+        }
+      ]
     },
     workbox: {
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
