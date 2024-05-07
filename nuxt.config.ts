@@ -17,17 +17,17 @@ export default defineNuxtConfig({
       theme_color: "#FF0000",
       icons: [
         {
-          src: 'icon.png',
+          src: 'public/icon.png',
           sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: 'icon2.png',
+          src: 'public/icon2.png',
           sizes: '512x512',
           type: 'image/png',
         },
         {
-          src: 'icon3.png',
+          src: 'public/icon3.png',
           sizes: '512x512',
           type: 'image/png',
           purpose: 'any maskable',
@@ -46,5 +46,8 @@ export default defineNuxtConfig({
       // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
       // periodicSyncForUpdates: 20,
     },
+    devOptions: {
+      enabled: true,
+    }
   }
 })
