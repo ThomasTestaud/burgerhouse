@@ -17,17 +17,17 @@ export default defineNuxtConfig({
       theme_color: "#FF0000",
       icons: [
         {
-          src: 'static/icon.png',
+          src: 'icon.png',
           sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: 'static/icon.png',
+          src: 'icon.png',
           sizes: '512x512',
           type: 'image/png',
         },
         {
-          src: 'static/icon.png',
+          src: 'icon.png',
           sizes: '512x512',
           type: 'image/png',
           purpose: 'any maskable',
